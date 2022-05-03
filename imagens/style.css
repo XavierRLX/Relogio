@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    animation: .5;
+}
+body{
+    background-color: #272626;
+}
+#FundoGeral{
+    color: #ffffff;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 20px black;
+    background-color: #1b1b1b;
+    animation: .3;
+}
+
+header{
+    text-align: center;
+    font-size: 4em;
+    color:#ffffff ;
+    margin: 50px;
+}
+#relogioGrande{
+    text-align: center;
+    font-size: 8em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.opcoes{
+    width: 500px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.tempo{
+    text-align: center;
+}
+#Fundo-dois{
+    display: none;
+}
+.tipo{
+    margin: 0px 50px 0px 50px;
+    padding: 5px;
+    animation: .2;
+}
+#calendario {
+    display: none;
+}
+#calendarioData {
+    width: 500px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+#cronometro, #temporizador {
+    background-color: #272626 ;
+    height: 30px;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#tempoTemporizador{
+    display: none;
+}
+#visorCronometro, #visorTemporizador {
+    display: none;
+}
+#temperatura{
+    text-align: center;
+}
+.icons{
+    cursor: pointer;
+}
+
+.controles{
+    margin: auto;
+    text-align: center;
+}
+.botoes{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+.adicionar{
+    margin: 20px 0px 20px 0px;
+}
+.locais{
+max-width: 700px;
+margin: auto;
+color: #ffffff;
+}
+.local{
+box-shadow: 0px 0px 20px black;
+background-color: #1b1b1b;
+height: 50px;
+padding: 10px;
+border-radius: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 10px;
+}

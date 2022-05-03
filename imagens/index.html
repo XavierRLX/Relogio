@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relogio</title>
+</head>
+<body onload="initClock()">
+
+    <div id="FundoGeral">
+
+        <div id="fundoum">
+            <div id="DiadaSemana">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span> de
+                <span id="year">Year</span>.
+              </div>
+              
+              <div id="relogioGrande">
+                <span id="hour">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+              </div>
+
+              <div id="temperatura">
+                <h1 class="city"></h1>
+                <h2>🌡<span id="temp"></span>°C 💧<span id='umidad'></span>%</h2>
+            </div>
+
+            <div>
+                <p id="imagemCrono"><img class="icons" src="cronometro.png"></p>
+            </div>
+
+        </div>
+
+        <div id="Fundo-dois">
+
+            <div id="relogio" class="hora"><p id="hora"> -- : -- : -- </p></div>
+    
+            <header> <h1 id="tempoCronometro"> 00:00:00</h1></header>
+            <header> <h1 id="tempoTemporizador">00:00:00:00</h1></header>
+    
+                <div class="opcoes">
+                        <h2 id="cronometro" class="tipo"> Cronômetro </h2>
+                        <h2 id="temporizador" class="tipo"> Temporizador </h2>
+                </div>
+    
+            <nav class="controles">
+                <div id="visorCronometro">
+                    <input class="botoes" onclick="iniciarCronos()" type="button" value="&#9654">
+                    <input class="botoes" onclick="pausarCronos()"  type="button" value="II">
+                    <input class="botoes" onclick="zerarCronos()"   type="button" value="Zerar">
+                </div>
+                <div id="visorTemporizador">
+                    <input class="botoes" onclick="iniciarTemp()" type="button" value="Contar">
+                    <input class="botoes" onclick="pausarTemp()" type="button" value="Pausar">
+                </div>
+                <br> <br>
+                <div id="calendario">
+                    <input type="datetime-local" id="calendarioData">
+                </div>
+            </nav>
+            <div id="imagemRelogio">
+                <img class="icons" src="simbolo-de-ferramentas-de-organizacao-e-administracao-de-horario-de-calendario-e-relogio.png">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="locais">
+        <div class="adicionar">
+            <p>+ Adicionar Local</p>
+        </div>
+            <div class="local">
+                <h3>São Paulo</h3>
+                <h3>00:00</h3>
+            </div>
+            <div class="local">
+                <h3>Buenos Aires</h3>
+                <h3>00:00</h3>
+            </div>
+            <div class="local">
+                <h3>New York</h3>
+                <h3>00:00</h3>
+            </div>
+    </div>
+
+</body>
+
+<script src="relogio.js"></script>
+<script src="inline.js"></script>
+<script src="cronos.js"></script>
+<script src="previsaoTempo.js"></script>
+</html>
