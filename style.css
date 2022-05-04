@@ -23,7 +23,7 @@ body{
     border-radius: 10px;
     margin: auto;
     margin-top: 50px;
-    box-shadow: 0px 0px 10px rgb(7, 4, 167);
+    box-shadow: 0px 0px 20px rgb(4, 38, 231);
     background-color: #000000;
     animation: .3;
 }
@@ -76,8 +76,6 @@ header{
     font-size: 1.2em;
 }
 #cronometro, #temporizador {
-    height: 30px;
-    padding: 8px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -130,4 +128,53 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 10px;
+}
+
+@media(max-width: 1200px) {
+    #FundoGeral{
+        max-width: 350px;
+        max-height: 300px;
+    }
+    header{
+        margin: 30px;
+    }
+    #relogioGrande {
+        font-size: 4em;
+    }
+    #tempoCronometro{
+        font-size: .7em;
+    }
+    #temperatura{
+        font-size: .6em;
+    }
+    #imagemCrono {
+        width: 40px;
+        margin-top: 10px;
+    }
+    #cronometro, #temporizador {
+        font-size: 1em;
+        
+    }
+    #tempoTemporizador{
+        font-size: 1.3em;
+    }
+    .opcoes {
+        margin-top:-30px;
+        width: 350px;
+    }
+    #visorCronometro {
+        display: inline;
+    }
+    #contadoresTemp{
+        margin-bottom: 80px;
+    }
+    #input_dt{
+        width: 130px;
+        margin-bottom: 0px;
+    }
+    .botoes {
+        width: 40px;
+        height: 30px;
+        font-size: .8em;
+    }
 }

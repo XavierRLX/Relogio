@@ -26,7 +26,7 @@ function getUserPosition() {
       humidity.innerHTML    = data.main.humidity
     })
     .catch((err) => {
-      city.innerText = `Ligue o GPS`;
+      city.innerText = `Rio de Janeiro`;
       temperature.innerHTML = `-`;
     })
   }
