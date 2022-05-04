@@ -26,7 +26,7 @@ function getUserPosition() {
       humidity.innerHTML    = data.main.humidity
     })
     .catch((err) => {
-      city.innerText = `Impossível acessar o OpenWeather. Verifique a sua conexão.`;
+      city.innerText = `Ligue o GPS`;
       temperature.innerHTML = `-`;
     })
   }

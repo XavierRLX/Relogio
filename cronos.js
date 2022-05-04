@@ -16,7 +16,7 @@ function zerarCronos() {
     clearInterval(interval)
     sec=0
     min=0
-    document.getElementById('tempoCronometro').innerText='00:00:00'
+    document.getElementById('tempoCronometro').innerText='00 : 00 : 00'
 }
 
 function play () {
@@ -29,7 +29,7 @@ function play () {
             hr++
         }
     } 
-    document.getElementById('tempoCronometro') .innerText = doisDigitos(hr) + ':' + doisDigitos(min) + ':' + doisDigitos(sec) 
+    document.getElementById('tempoCronometro') .innerText = doisDigitos(hr) + ' : ' + doisDigitos(min) + ' : ' + doisDigitos(sec) 
 }
 
 function doisDigitos(digitos) {

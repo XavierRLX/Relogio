@@ -1,19 +1,20 @@
 let cronos = document.getElementById('cronometro');
 let temp = document.getElementById('temporizador');
 let tempCronos = document.getElementById('tempoCronometro');
-let tempTemp = document.getElementById('tempoTemporizador');
 let visorCronos = document.getElementById('visorCronometro');
-let visortemp = document.getElementById('visorTemporizador');
+let tempTempo = document.getElementById('tempoTemporizador');
 let calendario = document.getElementById('calendario');
 let relogioP = document.getElementById('relogio');
 let imgCronos = document.getElementById('imagemCrono');
 let fundoUm = document.getElementById('fundoum');
 let fundoDois = document.getElementById('Fundo-dois');
 let imgRel = document.getElementById('imagemRelogio');
+let appTemp = document.getElementById('app');
+let imagemRelogio = document.getElementById('imagemRelogio')
 
 
 imgCronos.addEventListener('click', CronosInline);
-imgRel.addEventListener('click', RelogioInline)
+imgRel.addEventListener('click', RelogioInline);
 cronos.addEventListener('click', cronometroInline);
 temp.addEventListener('click', temporizadorInline);
 
@@ -29,31 +30,22 @@ function RelogioInline(){
 function cronometroInline(){
 
     cronos.style.boxShadow = '0px 0px 20px black'
-    tempCronos.style.display = 'inline'
-    cronos.style.backgroundColor = '#272626' 
     visorCronos.style.display = 'inline'
+    tempCronos.style.display = 'inline'
+    imagemRelogio.style.marginTop = '5.5px'
 
-
-    temp.style.boxShadow = 'none'
-    tempTemp.style.display = 'none'
-    temp.style.backgroundColor = '#1b1b1b'
-    visortemp.style.display = 'none'
-    calendario.style.display = 'none'
+    tempTempo.style.display = 'none'
+   appTemp.style.display = 'none'
 }
 
 function temporizadorInline(){
 
-    temp.style.boxShadow = '0px 0px 20px black'
-    tempTemp.style.display = 'inline'
-    temp.style.backgroundColor = '#272626'
-    visortemp.style.display = 'inline'
-    calendario.style.display = 'inline'
+   tempTempo.style.display = 'inline'
+   appTemp.style.display = 'inline'
+   imagemRelogio.style.marginTop = '75px'
 
-    cronos.style.boxShadow = 'none'
-    tempCronos.style.display = 'none'
-    cronos.style.backgroundColor = '#1b1b1b'
-    visorCronos.style.display = 'none'
-    
+   visorCronos.style.display = 'none'
+   tempCronos.style.display = 'none'
 }
 
 

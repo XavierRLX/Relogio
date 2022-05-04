@@ -12,14 +12,14 @@
     <div id="FundoGeral">
 
         <div id="fundoum">
-            <div id="DiadaSemana">
+            <div class="fontNum" id="DiadaSemana">
                 <span id="dayname">Day</span>,
                 <span id="month">Month</span>
                 <span id="daynum">00</span> de
                 <span id="year">Year</span>.
               </div>
               
-              <div id="relogioGrande">
+              <div class="fontNum" id="relogioGrande">
                 <span id="hour">00</span> :
                 <span id="minutes">00</span> :
                 <span id="seconds">00</span>
@@ -31,22 +31,32 @@
             </div>
 
             <div>
-                <p id="imagemCrono"><img class="icons" src="cronometro.png"></p>
+                <img id="imagemCrono" class="icons" src="cronometro.png">
             </div>
 
         </div>
 
         <div id="Fundo-dois">
 
-            <div id="relogio" class="hora"><p id="hora"> -- : -- : -- </p></div>
+            <div id="relogio" class="hora"><p class="fontNum" id="hora"> -- : -- : -- </p></div>
     
-            <header> <h1 id="tempoCronometro"> 00:00:00</h1></header>
-            <header> <h1 id="tempoTemporizador">00:00:00:00</h1></header>
+            <header> 
+                <h1 class="fontNum" id="tempoCronometro"> 00 : 00 : 00</h1>
+            </header>
+
+            <div id="tempoTemporizador">
+                <h1>
+                    <span id="contador-dia">00</span> : 
+                    <span id="contador-hor">00</span> : 
+                    <span id="contador-min">00</span> : 
+                    <span id="contador-seg">00</span>
+                </h1>
+            </div>
     
-                <div class="opcoes">
-                        <h2 id="cronometro" class="tipo"> Cronômetro </h2>
-                        <h2 id="temporizador" class="tipo"> Temporizador </h2>
-                </div>
+            <div class="opcoes">
+                <h2 id="cronometro" class="tipo"> Cronômetro </h2>
+                <h2 id="temporizador" class="tipo"> Temporizador </h2>
+            </div>
     
             <nav class="controles">
                 <div id="visorCronometro">
@@ -54,17 +64,19 @@
                     <input class="botoes" onclick="pausarCronos()"  type="button" value="II">
                     <input class="botoes" onclick="zerarCronos()"   type="button" value="Zerar">
                 </div>
-                <div id="visorTemporizador">
-                    <input class="botoes" onclick="iniciarTemp()" type="button" value="Contar">
-                    <input class="botoes" onclick="pausarTemp()" type="button" value="Pausar">
-                </div>
-                <br> <br>
-                <div id="calendario">
-                    <input type="datetime-local" id="calendarioData">
+
+                <div id="app" class="app">
+                    <div class="content-form">
+                        <form>
+                            <input class="botoes" type="datetime-local" id="input_dt" placeholder="Data de destino" />
+                            <button type="submit" class="botoes"> &#9654 </button>
+                        </form>
+                    </div>
                 </div>
             </nav>
-            <div id="imagemRelogio">
-                <img class="icons" src="simbolo-de-ferramentas-de-organizacao-e-administracao-de-horario-de-calendario-e-relogio.png">
+
+            <div>
+                <img id="imagemRelogio" class="icons" src="simbolo-de-ferramentas-de-organizacao-e-administracao-de-horario-de-calendario-e-relogio.png">
             </div>
         </div>
 
@@ -75,7 +87,7 @@
             <p>+ Adicionar Local</p>
         </div>
             <div class="local">
-                <h3>São Paulo</h3>
+                <h3>Londres</h3>
                 <h3>00:00</h3>
             </div>
             <div class="local">
@@ -90,8 +102,16 @@
 
 </body>
 
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Regressivo</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
 <script src="relogio.js"></script>
 <script src="inline.js"></script>
 <script src="cronos.js"></script>
 <script src="previsaoTempo.js"></script>
+<script src="Temporizador.js"></script>
 </html>
